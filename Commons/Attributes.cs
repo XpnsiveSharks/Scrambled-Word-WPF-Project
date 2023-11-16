@@ -8,10 +8,13 @@ namespace Scrambled_Word_WPF_Project.Commons
 {
     public class Attributes
     {
-        public int ID { get; set; }
         public string WORD { get; set; }
         public string HINT { get; set; }
-        public string DIFFICULTY { get; set; }
-        public int SCORE { get; set; }
+        public Attributes(int iD, string wORD, string hINT)
+        {
+            WORD = wORD;
+            HINT = hINT;
+        }
+
     }
 }

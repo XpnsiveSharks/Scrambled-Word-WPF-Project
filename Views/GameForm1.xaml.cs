@@ -25,6 +25,8 @@ namespace Scrambled_Word_WPF_Project.Views
             InitializeComponent();
             TxtBlkScore.Text = CoreObjects.Scoring();
             TxtBlkWord.Text = CoreObjects.wordInfo();
+            TxtBlkDifficulty.Text = CoreObjects.DisplayDifficulty();
+            TxtBlkCorrectGuess.Text = CoreObjects.CorrectGuessed();
         }
         private void BtnSubmit_Click(object sender, RoutedEventArgs e)
         {
@@ -32,6 +34,8 @@ namespace Scrambled_Word_WPF_Project.Views
             {
                 TxtBlkWord.Text = CoreObjects.CheckAnswer(TxtBxAnswer.Text);
                 TxtBlkScore.Text = CoreObjects.Scoring();
+                TxtBlkDifficulty.Text = CoreObjects.DisplayDifficulty();
+                TxtBlkCorrectGuess.Text = CoreObjects.CorrectGuessed();
                 ClearFields();
             }
             catch(Exception ex)

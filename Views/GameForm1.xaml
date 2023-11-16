@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="GameForm1" Height="450" Width="800">
     <Grid>
-        <Button x:Name="BtnSubmit" Content="Button" HorizontalAlignment="Left" Height="33" Margin="324,349,0,0" VerticalAlignment="Top" Width="187" Click="BtnSubmit_Click"/>
-        <TextBlock x:Name="TxtBlkWord" HorizontalAlignment="Left" Height="64" Margin="180,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="424"/>
-        <Button x:Name="BtnHint" Content="Button" HorizontalAlignment="Left" Height="33" Margin="632,350,0,0" VerticalAlignment="Top" Width="84" Click="BtnHint_Click"/>
-        <TextBlock x:Name="TxtBlkHint" HorizontalAlignment="Center" Height="69" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="592" Margin="0,194,0,0"/>
-        <TextBox x:Name="TxtBxAnswer" HorizontalAlignment="Left" Height="37" Margin="301,301,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="212"/>
-        <TextBlock x:Name="TxtBlkScore" HorizontalAlignment="Left" Height="43" Margin="29,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="95"/>
-        <TextBlock x:Name="TxtBlkDifficulty" HorizontalAlignment="Left" Height="22" Margin="151,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BtnSubmit" Content="Submit" HorizontalAlignment="Left" Height="33" Margin="314,349,0,0" VerticalAlignment="Top" Width="187" Click="BtnSubmit_Click"/>
+        <TextBlock x:Name="TxtBlkWord" HorizontalAlignment="Left" Height="64" Margin="180,97,0,0" TextWrapping="Wrap" Text="" TextAlignment="Center" FontFamily="Courier New" FontWeight="UltraBlack"  FontSize="30" VerticalAlignment="Top" Width="424" />
+        <Button x:Name="BtnHint" Content="Hint" HorizontalAlignment="Left" Height="33" Margin="632,350,0,0" VerticalAlignment="Top" Width="84" Click="BtnHint_Click"/>
+        <TextBlock x:Name="TxtBlkHint" HorizontalAlignment="Center" Height="69" TextWrapping="Wrap" Text="" TextAlignment="Center" FontFamily="Courier New" FontSize="20"  VerticalAlignment="Top" Width="592" Margin="0,194,0,0"/>
+        <TextBox x:Name="TxtBxAnswer" HorizontalAlignment="Left" Height="37" Margin="301,301,0,0" TextWrapping="Wrap" Text="" TextAlignment="Center" FontSize="16" VerticalAlignment="Top" Width="212"/>
+        <TextBlock x:Name="TxtBlkScore" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" TextWrapping="Wrap" Text="" TextAlignment="Center" FontFamily="Comic Sans MS" FontWeight="UltraBlack" FontSize="40" VerticalAlignment="Top" Width="85"/>
+        <TextBlock x:Name="TxtBlkDifficulty" HorizontalAlignment="Left" Height="56" Margin="478,25,0,0" TextWrapping="Wrap" Text="" TextAlignment="Center" FontFamily="Comic Sans MS" FontWeight="UltraBlack" FontSize="20" VerticalAlignment="Top" Width="312"/>
+        <TextBlock x:Name="TxtBlkCorrectGuess" HorizontalAlignment="Left" Height="25" Margin="10,382,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="65"/>
 
     </Grid>
 </Window>

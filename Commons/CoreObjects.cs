@@ -13,17 +13,28 @@ namespace Scrambled_Word_WPF_Project.Commons
         static List <int> usedInteger = new List<int>();
         static int TotalScore = 0;
         static int CorrectAnsScores = 0;
+        public static string Scoring()
+            => TotalScore.ToString();
+        public static string CorrectGuessed()
+            => CorrectAnsScores.ToString();
+        public static string DisplayDifficulty()
+        {
+            return CorrectAnsScores <= 8 ? "Easy" :
+                CorrectAnsScores >= 9 && CorrectAnsScores <= 18 ? "Average" :
+                CorrectAnsScores >= 19 ? "Difficult" :
+                null;
+        }
         public static string wordInfo()
         {
-            if (CorrectAnsScores <= 5)
+            if (CorrectAnsScores <= 8)
             {
                 return RandomizeWord(DataSource.scrambledWordInfo(1, radomNumberGenerator()));
             }
-            else if(CorrectAnsScores >= 6 && CorrectAnsScores <= 15)
+            else if(CorrectAnsScores >= 9 && CorrectAnsScores <= 18)
             {
                 return RandomizeWord(DataSource.scrambledWordInfo(2, radomNumberGenerator()));
             }
-            else if(CorrectAnsScores >= 16)
+            else if(CorrectAnsScores >= 19)
             {
                 return RandomizeWord(DataSource.scrambledWordInfo(3, radomNumberGenerator()));
             }
@@ -75,25 +86,22 @@ namespace Scrambled_Word_WPF_Project.Commons
                 return null;
             }
         }
-        public static string Scoring()
-        {
-            return TotalScore.ToString();
-        }
+        
         public static string CheckAnswer(string _answer)
         {
-            if(_answer.ToLower().Equals(DataSource.scrambledWordInfo(1, usedInteger[usedInteger.Count - 1]))&& CorrectAnsScores <= 5)
+            if(_answer.ToLower().Equals(DataSource.scrambledWordInfo(1, usedInteger[usedInteger.Count - 1]))&& CorrectAnsScores <= 8)
             {  
                 TotalScore += 1;
                 CorrectAnsScores += 1;
                 return wordInfo();
             }
-            else if (_answer.ToLower().Equals(DataSource.scrambledWordInfo(2, usedInteger[usedInteger.Count - 1])) && CorrectAnsScores >= 6 && CorrectAnsScores <=15)
+            else if (_answer.ToLower().Equals(DataSource.scrambledWordInfo(2, usedInteger[usedInteger.Count - 1])) && CorrectAnsScores >= 9 && CorrectAnsScores <=18)
             {
                 TotalScore += 2;
                 CorrectAnsScores += 1;
                 return wordInfo();
             }
-            else if (_answer.ToLower().Equals(DataSource.scrambledWordInfo(3, usedInteger[usedInteger.Count - 1])) && CorrectAnsScores >= 16)
+            else if (_answer.ToLower().Equals(DataSource.scrambledWordInfo(3, usedInteger[usedInteger.Count - 1])) && CorrectAnsScores >= 19)
             {
                 TotalScore += 3;
                 CorrectAnsScores += 1;
