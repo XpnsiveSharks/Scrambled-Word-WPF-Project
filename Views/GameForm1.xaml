@@ -13,6 +13,7 @@
         <TextBlock x:Name="TxtBlkHint" HorizontalAlignment="Center" Height="69" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="592" Margin="0,194,0,0"/>
         <TextBox x:Name="TxtBxAnswer" HorizontalAlignment="Left" Height="37" Margin="301,301,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="212"/>
         <TextBlock x:Name="TxtBlkScore" HorizontalAlignment="Left" Height="43" Margin="29,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="95"/>
+        <TextBlock x:Name="TxtBlkDifficulty" HorizontalAlignment="Left" Height="22" Margin="151,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
