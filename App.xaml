@@ -1,0 +1,10 @@
+﻿<Application x:Class="Scrambled_Word_WPF_Project.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Scrambled_Word_WPF_Project"
+             StartupUri="Views/GameForm1.xaml">
+
+    <Application.Resources>
+        
+    </Application.Resources>
+</Application>

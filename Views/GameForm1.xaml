@@ -1,0 +1,18 @@
+﻿<Window x:Class="Scrambled_Word_WPF_Project.Views.GameForm1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scrambled_Word_WPF_Project.Views"
+        mc:Ignorable="d"
+        Title="GameForm1" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="BtnSubmit" Content="Button" HorizontalAlignment="Left" Height="33" Margin="324,349,0,0" VerticalAlignment="Top" Width="187" Click="BtnSubmit_Click"/>
+        <TextBlock x:Name="TxtBlkWord" HorizontalAlignment="Left" Height="64" Margin="180,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="424"/>
+        <Button x:Name="BtnHint" Content="Button" HorizontalAlignment="Left" Height="33" Margin="632,350,0,0" VerticalAlignment="Top" Width="84" Click="BtnHint_Click"/>
+        <TextBlock x:Name="TxtBlkHint" HorizontalAlignment="Center" Height="69" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="592" Margin="0,194,0,0"/>
+        <TextBox x:Name="TxtBxAnswer" HorizontalAlignment="Left" Height="37" Margin="301,301,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="212"/>
+        <TextBlock x:Name="TxtBlkScore" HorizontalAlignment="Left" Height="43" Margin="29,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="95"/>
+
+    </Grid>
+</Window>
