@@ -66,6 +66,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commons.v2\IAttributes.cs" />
     <Compile Include="Commons\Attributes.cs" />
     <Compile Include="Commons\CoreObjects.cs" />
     <Compile Include="Commons\DataSource.cs" />
