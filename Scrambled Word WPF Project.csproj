@@ -66,13 +66,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commons.v2\AttributesBase.cs" />
+    <Compile Include="Commons.v2\AttributesPattern.cs" />
     <Compile Include="Commons.v2\IAttributes.cs" />
+    <Compile Include="Commons.v2\WordAttributes.cs" />
     <Compile Include="Commons\Attributes.cs" />
     <Compile Include="Commons\CoreObjects.cs" />
     <Compile Include="Commons\DataSource.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views.v2\GameForm.v2.xaml.cs">
+      <DependentUpon>GameForm.v2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GameForm1.xaml.cs">
       <DependentUpon>GameForm1.xaml</DependentUpon>
@@ -109,6 +115,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views.v2\GameForm.v2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GameForm1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

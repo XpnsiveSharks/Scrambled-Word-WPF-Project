@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Scrambled_Word_WPF_Project.Commons.v2
 {
-    public interface IAttributes
+    public class AttributesBase : IAttributes
     {
-        string WORD { get; set; }
-        string HINT { get; set; }
-        string DIFFICULTY { get; set; }
+        public string WORD { get; set; }
+        public string HINT { get; set; }
+        public string DIFFICULTY { get; set; }
     }
 }
